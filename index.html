@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellow: "#FECC02",
+              offBlack: "#131313",
+              gray: "#4E4E4E",
+            },
+            fontFamily: {
+              bebas: ["Bebas Neue", "cursive"],
+              montserrat: ["Montserrat", "sans-serif"],
+            },
+            backgroundImage: {
+              banner: "url('./images/banner.jpg')",
+            },
+          },
+        },
+      };
+      //!      font-family: 'Bebas Neue', cursive;
+      //!      font-family: 'Montserrat', sans-serif;
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav
+      class="flex justify-between items-center px-6 md:px-24 lg:px-52 h-20 bg-white font-bebas absolute w-full"
+    >
+      <h1 class="text-3xl">Jhaka Naka Production</h1>
+      <ul class="flex gap-3 text-lg">
+        <li>About us</li>
+        <li>Our Movies</li>
+        <li>Services</li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Landing Section -->
+
+      <section class="bg-banner bg-cover h-screen pt-20 flex items-center">
+        <div class="ml-20 font-bebas">
+          <p class="uppercase font-bold">Movie production studio</p>
+          <h1>Films Made to Perfection</h1>
+          <p class="font-montserrat">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <button
+            class="mt-5 text-xl text-white hover:bg-yellow hover:text-black hover:border-yellow transition ease-in-out border-2 py-2 px-5"
+          >
+            Discover More
+          </button>
+        </div>
+      </section>
+
+      <!-- about us  -->
+
+      <section class="m-20 border-2">
+        <div class="lg:flex">
+          <div
+            class="bg-[url('./images/camera-man.jpg')] bg-cover lg:w-2/4 h-[300px] md:h-[500px] bg-center m-10 flex justify-center items-end"
+          >
+            <h1 class="bg-white p-5 rounded -mb-6">23 YEARS of EXPERIENCE</h1>
+          </div>
+          <div class="lg:w-2/4 m-10">
+            <p>ABOUT US</p>
+            <h1>FIlming Experience Just Got better</h1>
+            <p>
+              Primis lobortis adipiscing imperdiet dis ultricies. Id commodo
+              interdum fermentum pede dictumst ipsum. Erat sapien phasellus
+              suspendisse natoque nulla leo ornare mi. Pretium rhoncus venenatis
+              ante dignissim aliquet faucibus tempus etiam feugiat.
+            </p>
+            <button
+              class="mt-5 text-xl text-black hover:bg-yellow hover:text-black hover:border-yellow transition ease-in-out border-2 py-2 px-5 font-bebas"
+            >
+              Discover More
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- movies  -->
+
+      <section class="bg-gray h-full p-10">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div
+            class="border-2 border-white p-5 h-[500px] md:h-[500px] lg:h-[350px]"
+          >
+            <div
+              class="bg-[url('./images/inception.jpg')] w-full h-full bg-cover bg-center"
+            ></div>
+          </div>
+          <div
+            class="border-2 border-white p-5 h-[300px] md:h-[500px] lg:h-[350px]"
+          >
+            <div
+              class="bg-[url('./images/inception.jpg')] w-full h-full bg-cover bg-center"
+            ></div>
+          </div>
+          <div
+            class="border-2 border-white p-5 h-[300px] md:h-[500px] lg:h-[350px]"
+          >
+            <div
+              class="bg-[url('./images/inception.jpg')] w-full h-full bg-cover bg-center"
+            ></div>
+          </div>
+          <div
+            class="border-2 border-white p-5 h-[300px] md:h-[500px] lg:h-[350px]"
+          >
+            <div
+              class="bg-[url('./images/inception.jpg')] w-full h-full bg-cover bg-center"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
